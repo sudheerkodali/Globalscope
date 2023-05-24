@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div> Global scope and local scope</div>
+    <script>
+
+        let key = 10;
+
+        function a(x) {
+            let = 30
+            let y = key * x;
+            console.log(y);
+        }
+
+        function b(x) {
+            let z = key * x;
+            console.log(z);
+        }
+        a(10);
+        b(20);
+        console.log(key);
+        console.log(y);
+        console.log(z);  
+    </script>
+    <!--function personalDetails(name, qualification) {
+    console.log(' Hi! I am ' + name + ', education ' + qualification + ',');
+    }
+
+    personalDetails('sudheer', 'hcm Techno consultant');**/
+    </script>-->
+
+</body>
+
+</html>
